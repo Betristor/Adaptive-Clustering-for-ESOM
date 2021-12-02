@@ -1,0 +1,114 @@
+{
+  "Texas_7_years": {
+    "root": "/home/jupyter-zyh/Gnhe/data/Texas/",
+    "save_root": "/home/jupyter-zyh/Gnhe/analysis_profile/global_setting/Linear/Texas/profile-1/",
+    "pv_path": "pv_data_Texas.csv",
+    "wind_path": "wind_data_Texas.csv",
+    "load_path": "power_demand_Texas.csv",
+    "note_1": "This property is set to indicate what are above properties for path. No need to change.",
+
+    "inputs": {
+      "c_bat": 200000,
+      "c_bat_power": 70000,
+      "c_pv": 1000000,
+      "c_wind": 1500000,
+      "c_gen_inv": 1000000,
+      "c_gen_a": 0.1,
+      "c_gen_b": 30,
+
+      "up_time": 6,
+      "down_time": 6,
+      "energy_cap": 200,
+      "power_cap": 200,
+      "gen_cap": 0,
+
+      "mdc": 50,
+      "effi": 0.9,
+      "rps": 0.8,
+      "note_2": "This property is set to indicate what are above properties for model. Change with model parameters.",
+      
+      "solver": 1,
+      "print_log": 0,
+      "mipgap": 1e-4,
+      "timelimit": 210240,
+      "note_3": "This property is set to indicate what are above properties for solver. No need to change."
+    },
+
+    "settings": {
+      "data": "Texas",
+      "profile_id": 1,
+      "day_num": 2555,
+      "period": 168,
+      "normalize": false,
+      "feature_set": [
+        "renewable_cap",
+        "N",
+        "max_energy",
+        "max_power"
+      ]
+    },
+    "note_4": "This property is set to indicate what are above properties for settings. Change with data and method.",
+    
+    "ranges": {
+      "methods": ["single"],
+      "trials": ["simulated"],
+      "nclusters": [35,40,45,50,55,60]
+    },
+    "note_5": "This property is set to indicate what are above properties for global setings. Change with global settings."
+  },
+  "NE_7_years": {
+    "root": "/home/jupyter-zyh/Gnhe/data/NE/",
+    "save_root": "/home/jupyter-zyh/Gnhe/analysis_profile/global_setting/Linear/NE/",
+    "pv_path": "pv_data.csv",
+    "wind_path": "wind_data.csv",
+    "load_path": "power_demand.csv",
+    "note_1": "This property is set to indicate what are above properties for path. No need to change.",
+
+    "inputs": {
+      "c_bat": 200000,
+      "c_bat_power": 70000,
+      "c_pv": 1000000,
+      "c_wind": 1500000,
+      "c_gen_inv": 1000000,
+      "c_gen_a": 0.1,
+      "c_gen_b": 30,
+
+      "up_time": 6,
+      "down_time": 6,
+      "energy_cap": 200,
+      "power_cap": 200,
+      "gen_cap": 0,
+
+      "mdc": 50,
+      "effi": 0.9,
+      "rps": 0.8,
+      "note_2": "This property is set to indicate what are above properties for model. Change with model parameters.",
+      
+      "solver": 1,
+      "print_log": 0,
+      "timelimit": 210240,
+      "note_3": "This property is set to indicate what are above properties for solver. No need to change."
+    },
+
+    "settings": {
+      "data": "NE",
+      "day_num": 2555,
+      "period": 168,
+      "normalize": false,
+      "feature_set": [
+        "renewable_cap",
+        "N",
+        "max_energy",
+        "max_power"
+      ]
+    },
+    "note_4": "This property is set to indicate what are above properties for settings. Change with data and method.",
+    
+    "ranges": {
+      "methods": ["kmeans", "single", "ward", "complete", "average"],
+      "trials": ["hourly", "simulated", "combined"],
+      "nclusters": [5, 10, 15, 20, 25, 30]
+    },
+    "note_5": "This property is set to indicate what are above properties for global setings. Change with global settings."
+  }
+}
