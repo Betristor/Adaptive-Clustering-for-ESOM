@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "He"
   given-names: "Guannan"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0002-5055-076X"
 - family-names: "Zhang"
   given-names: "Yuheng"
 title: "model_adaptive_time_aggregation_for_long_term_energy_system_optimization_model"
