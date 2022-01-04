@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Yuheng"
-  given-names: "Zhang"
-- family-names: "Guannan"
-  given-names: "He"
+- family-names: "Zhang"
+  given-names: "Yuheng"
+- family-names: "He"
+  given-names: "Guannan"
   orcid: "https://orcid.org/0000-0002-5055-076X"
 title: "Adaptive-clustering-for-ESOM"
 version: 1.0.0
 doi: 10.5281/zenodo.1234
-date-released: 2022-01-04
+date-released: 2021-12-04
 url: "https://github.com/Betristor/Adaptive-clustering-for-ESOM"
